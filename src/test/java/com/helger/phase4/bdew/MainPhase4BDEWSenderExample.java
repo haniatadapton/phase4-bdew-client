@@ -53,7 +53,7 @@ public class MainPhase4BDEWSenderExample
 {
   private static final Logger LOGGER = LoggerFactory.getLogger (MainPhase4BDEWSenderExample.class);
 
-  private static final String KEYSTORE_PATH = "C:/O/OneDrive - adapton AG/Desktop/Sender (client)/phase4-bdew-client/src/test/resources/ks1.p12";
+  private static final String KEYSTORE_PATH = "ks1.p12";
   private static final String KEYSTORE_PASSWORD = "changeit";
   private static final String KEY_ALIAS = "cert1";
   public static void main (final String [] args)
@@ -90,7 +90,7 @@ public class MainPhase4BDEWSenderExample
 
       // Load truststore
       final KeyStore aTrustStore = KeyStoreHelper.loadKeyStoreDirect(EKeyStoreType.PKCS12,
-              "src/test/resources/truststore.p12",
+              "truststore.p12",
               KEYSTORE_PASSWORD.toCharArray());
       if (aTrustStore == null)
         throw new IllegalStateException("Failed to load truststore");
