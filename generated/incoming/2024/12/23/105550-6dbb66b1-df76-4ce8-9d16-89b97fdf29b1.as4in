@@ -1,0 +1,12 @@
+Date: Mon, 23 Dec 2024 09:55:49 GMT
+Referrer-Policy: strict-origin-when-cross-origin
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Strict-Transport-Security: max-age=3600;includeSubDomains
+Cache-Control: no-cache, no-store, must-revalidate, proxy-revalidate
+Content-Type: application/soap+xml;charset=utf-8
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><S12:Envelope xmlns:S12="http://www.w3.org/2003/05/soap-envelope"><S12:Header><eb:Messaging xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:eb="http://docs.oasis-open.org/ebxml-msg/ebms/v3.0/ns/core/200704/" xmlns:ebbp="http://docs.oasis-open.org/ebxml-bp/ebbp-signals-2.0" xmlns:ns5="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns6="http://www.w3.org/2003/05/soap-envelope" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xlink="http://www.w3.org/1999/xlink" wsu:Id="phase4-msg-f6248351-917d-491e-ba1e-ad56e5765a06"><eb:SignalMessage><eb:MessageInfo><eb:Timestamp>2024-12-23T10:55:50.546+01:00</eb:Timestamp><eb:MessageId>4f60b821-6a90-4cca-8650-0c45bdc582f7@phase4</eb:MessageId><eb:RefToMessageId>40ebae3a-5072-42a4-99bc-d46ddab80037@phase4</eb:RefToMessageId></eb:MessageInfo><eb:Error category="Processing" errorCode="EBMS:0010" severity="failure" shortDescription="ProcessingModeMismatch"><eb:Description xml:lang="en">The ebMS header or another header (e.g. reliability, security) expected by the MSH is not compatible with the expected content, based on the associated P-Mode.</eb:Description><eb:ErrorDetail>Failed to resolve PMode 'null' / 'AS4-Service' / 'AS4-Action' / 'AS4-Sender' / 'AS4-Receiver' / 'https://www.bdew.de/as4/communication/agreement' / 'http://localhost:8080/as4' using resolver [AS4ProfileID=null]</eb:ErrorDetail></eb:Error></eb:SignalMessage></eb:Messaging></S12:Header><S12:Body/></S12:Envelope>
