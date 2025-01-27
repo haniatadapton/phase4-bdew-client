@@ -25,7 +25,7 @@
   <parent>
     <groupId>com.helger.phase4</groupId>
     <artifactId>phase4-parent-pom</artifactId>
-    <version>3.0.2</version>
+    <version>3.0.0-SNAPSHOT</version>
   </parent>
   <artifactId>phase4-bdew-client</artifactId>
   <packaging>bundle</packaging>
@@ -49,37 +49,8 @@
       <email>gregor.scholtysik@soptim.de</email>
     </developer>
   </developers>
-  
+
   <dependencies>
-    <dependency>
-      <groupId>org.bouncycastle</groupId>
-      <artifactId>bcprov-jdk18on</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.bouncycastle</groupId>
-      <artifactId>bcpkix-jdk18on</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>jakarta.servlet</groupId>
-      <artifactId>jakarta.servlet-api</artifactId>
-      <scope>provided</scope>
-    </dependency>
-    <dependency>
-      <groupId>com.sun.xml.bind</groupId>
-      <artifactId>jaxb-impl</artifactId>
-    </dependency>
-  
-    <dependency>
-      <groupId>org.scala-lang</groupId>
-      <artifactId>scala-library</artifactId>
-      <version>2.13.0</version>
-    </dependency>
-
-    <dependency>
-      <groupId>com.helger.commons</groupId>
-      <artifactId>ph-security</artifactId>
-    </dependency>
-
     <dependency>
       <groupId>com.helger.phase4</groupId>
       <artifactId>phase4-lib</artifactId>
@@ -88,7 +59,11 @@
       <groupId>com.helger.phase4</groupId>
       <artifactId>phase4-profile-bdew</artifactId>
     </dependency>
-  
+    <dependency>
+      <groupId>jakarta.servlet</groupId>
+      <artifactId>jakarta.servlet-api</artifactId>
+      <scope>provided</scope>
+    </dependency>
 
     <dependency>
       <groupId>junit</groupId>
@@ -101,10 +76,52 @@
       <scope>test</scope>
     </dependency>
     <dependency>
+      <groupId>com.sun.xml.bind</groupId>
+      <artifactId>jaxb-impl</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
       <groupId>org.bouncycastle</groupId>
       <artifactId>bctls-jdk18on</artifactId>
       <version>${bctls.version}</version>
       <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.helger.commons</groupId>
+      <artifactId>ph-security</artifactId>
+      <version>11.1.10</version>
+    </dependency>
+  
+    <dependency>
+      <groupId>com.helger.phase4</groupId>
+      <artifactId>phase4-lib</artifactId>
+      <version>3.0.0</version>
+    </dependency>
+  
+    <dependency>
+      <groupId>org.scala-lang</groupId>
+      <artifactId>scala-library</artifactId>
+      <version>2.13.0</version>
+    </dependency>
+  
+    <dependency>
+      <groupId>com.helger.phase4</groupId>
+      <artifactId>phase4-lib</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.bouncycastle</groupId>
+      <artifactId>bcprov-jdk18on</artifactId>
+      <version>1.78.1</version>
+    </dependency>
+    <dependency>
+      <groupId>org.bouncycastle</groupId>
+      <artifactId>bcpkix-jdk18on</artifactId>
+      <version>1.78.1</version>
+    </dependency>
+    <dependency>
+      <groupId>org.bouncycastle</groupId>
+      <artifactId>bctls-jdk18on</artifactId>
+      <version>1.78.1</version>
     </dependency>
   </dependencies>
 

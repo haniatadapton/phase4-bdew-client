@@ -191,6 +191,7 @@ public class MainPhase4BDEWSenderExample
       eResult = Phase4BDEWSender.builder()
               //Communication Configs
               .endpointURL("http://localhost:8080/as4")
+              //.endpointURL("https://as4-9903914000002.services.as4energy.com/AS4Service/AS4Endpoint")
               .encryptionKeyIdentifierType(ECryptoKeyIdentifierType.X509_KEY_IDENTIFIER)
               .signingKeyIdentifierType(ECryptoKeyIdentifierType.BST_DIRECT_REFERENCE)
               //----PartyInfo----
@@ -203,8 +204,9 @@ public class MainPhase4BDEWSenderExample
 
               //----CollaborationInfo----
               .agreementRef("https://www.bdew.de/as4/communication/agreement")
-              .service("https://www.bdew.de/sdsdsdsdsdsdas4/communication/services/MP")
-              .action("http://docs.oasis-open.orgdsdsdsdsdsds/ebxml-msg/as4/200902/action")
+              .service("https://www.bdew.de/as4/communication/services/MP")
+              //.service("http://docs.oasis-open.org/ebxml-msg/ebms/v3.0/ns/core/200704/service")
+              .action("http://docs.oasis-open.org/ebxml-msg/as4/200902/action")
               .payload(AS4OutgoingAttachment.builder()
                               .data(aPayloadBytes)
                               .compressionGZIP()
