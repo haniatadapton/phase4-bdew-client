@@ -1,0 +1,33 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: com.helger.phase4.bdew
+Bnd-LastModified: 1737557609429
+Build-Jdk-Spec: 22
+Bundle-Description: BDEW AS4 client for outgoing transmissions
+Bundle-DocURL: https://www.helger.com
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0
+Bundle-ManifestVersion: 2
+Bundle-Name: phase4-bdew-client
+Bundle-SymbolicName: com.helger.phase4.bdew-client
+Bundle-Vendor: Philip Helger
+Bundle-Version: 3.0.2
+Created-By: Apache Maven Bundle Plugin 5.1.9
+Export-Package: com.helger.phase4.bdew;uses:="com.helger.httpclient,com.
+ helger.phase4.attachment,com.helger.phase4.crypto,com.helger.phase4.sen
+ der,com.helger.phase4.util,org.apache.hc.core5.util,org.apache.wss4j.do
+ m.handler";version="3.0.2"
+Implementation-Title: phase4-bdew-client
+Implementation-Vendor: Philip Helger
+Implementation-Version: 3.0.2
+Import-Package: com.helger.commons.collection.impl;version="[11.1,12)",c
+ om.helger.commons.string;version="[11.1,12)",com.helger.commons.traits;
+ version="[11.1,12)",com.helger.commons.ws;version="[11.1,12)",com.helge
+ r.http.tls;version="[10.2,11)",com.helger.httpclient;version="[10.2,11)
+ ",com.helger.phase4;version="[3.0,4)",com.helger.phase4.attachment;vers
+ ion="[3.0,4)",com.helger.phase4.crypto;version="[3.0,4)",com.helger.pha
+ se4.sender;version="[3.0,4)",com.helger.phase4.util;version="[3.0,4)",j
+ ava.io,java.lang,java.lang.invoke,java.security,java.time,java.util,jav
+ ax.net.ssl,org.apache.hc.core5.util,org.apache.wss4j.common.bsp;version
+ ="[3.0,4)",org.apache.wss4j.dom.handler;version="[3.0,4)",org.slf4j;ver
+ sion="[2.0,3)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=11))"
+Tool: Bnd-6.3.1.202206071316

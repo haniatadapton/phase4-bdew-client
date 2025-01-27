@@ -1,0 +1,7 @@
+com\helger\phase4\bdew\Phase4BDEWHttpClientSettings.class
+com\helger\phase4\bdew\AbstractBDEWDecryptParameterModifier.class
+com\helger\phase4\bdew\Phase4BDEWSender$BDEWUserMessageBuilder.class
+com\helger\phase4\bdew\Phase4BDEWException.class
+com\helger\phase4\bdew\Phase4BDEWSender$BDEWPayloadParams.class
+com\helger\phase4\bdew\Phase4BDEWSender$AbstractBDEWUserMessageBuilder.class
+com\helger\phase4\bdew\Phase4BDEWSender.class

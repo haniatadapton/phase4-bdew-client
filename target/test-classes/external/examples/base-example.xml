@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+    <metadata>
+        <name>Toy Example</name>
+        <version>1.0.0</version>
+        <description>A minimal configuration example for an mscons file.</description>
+        <author>John Doe</author>
+    </metadata>
+    <settings>
+        <debug>true</debug>
+        <optimization_level>2</optimization_level>
+    </settings>
+    <dependencies>
+        <dependency>
+            <name>library-a</name>
+            <version>&gt;=1.2.3</version>
+        </dependency>
+        <dependency>
+            <name>library-b</name>
+            <version>^0.5.0</version>
+        </dependency>
+    </dependencies>
+    <build>
+        <output_directory>./build</output_directory>
+        <entry_point>src/main.ms</entry_point>
+        <commands>
+            <command>compile src/main.ms</command>
+            <command>link build/output</command>
+        </commands>
+    </build>
+</project>

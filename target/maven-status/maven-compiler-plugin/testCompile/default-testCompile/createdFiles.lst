@@ -1,0 +1,5 @@
+com\helger\phase4\bdew\crypto\BrainpoolFuncTest.class
+com\helger\phase4\bdew\MainPhase4BDEWSenderExample.class
+com\helger\phase4\bdew\Phase4BDEWHttpClientSettingsTest.class
+com\helger\phase4\bdew\crypto\SecP256R1FuncTest.class
+com\helger\phase4\bdew\SPITest.class

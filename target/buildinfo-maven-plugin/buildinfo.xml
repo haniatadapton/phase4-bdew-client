@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapping>
+  <map key="buildinfo.version" value="3" />
+  <map key="project.groupid" value="com.helger.phase4" />
+  <map key="project.artifactid" value="phase4-bdew-client" />
+  <map key="project.version" value="3.0.2" />
+  <map key="project.name" value="phase4-bdew-client" />
+  <map key="project.packaging" value="bundle" />
+  <map key="parentproject.groupid" value="com.helger.phase4" />
+  <map key="parentproject.artifactid" value="phase4-parent-pom" />
+  <map key="parentproject.version" value="3.0.2" />
+  <map key="parentproject.name" value="phase4-parent-pom" />
+  <map key="build.plugin.count" value="15" />
+  <map key="build.plugin.0.groupid" value="org.apache.maven.plugins" />
+  <map key="build.plugin.0.artifactid" value="maven-compiler-plugin" />
+  <map key="build.plugin.0.version" value="3.13.0" />
+  <map key="build.plugin.0.configuration" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;configuration>&#xD;&#xA;  &lt;fork>false&lt;/fork>&#xD;&#xA;  &lt;showWarnings>true&lt;/showWarnings>&#xD;&#xA;  &lt;showDeprecation>true&lt;/showDeprecation>&#xD;&#xA;  &lt;encoding>UTF-8&lt;/encoding>&#xD;&#xA;  &lt;source>11&lt;/source>&#xD;&#xA;  &lt;target>11&lt;/target>&#xD;&#xA;&lt;/configuration>" />
+  <map key="build.plugin.0.key" value="org.apache.maven.plugins:maven-compiler-plugin" />
+  <map key="build.plugin.1.groupid" value="org.apache.maven.plugins" />
+  <map key="build.plugin.1.artifactid" value="maven-source-plugin" />
+  <map key="build.plugin.1.version" value="3.3.1" />
+  <map key="build.plugin.1.key" value="org.apache.maven.plugins:maven-source-plugin" />
+  <map key="build.plugin.2.groupid" value="org.apache.maven.plugins" />
+  <map key="build.plugin.2.artifactid" value="maven-jar-plugin" />
+  <map key="build.plugin.2.version" value="3.4.2" />
+  <map key="build.plugin.2.configuration" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;configuration>&#xD;&#xA;  &lt;archive>&#xD;&#xA;    &lt;manifest>&#xD;&#xA;      &lt;addDefaultImplementationEntries>true&lt;/addDefaultImplementationEntries>&#xD;&#xA;    &lt;/manifest>&#xD;&#xA;  &lt;/archive>&#xD;&#xA;&lt;/configuration>" />
+  <map key="build.plugin.2.key" value="org.apache.maven.plugins:maven-jar-plugin" />
+  <map key="build.plugin.3.groupid" value="org.apache.maven.plugins" />
+  <map key="build.plugin.3.artifactid" value="maven-war-plugin" />
+  <map key="build.plugin.3.version" value="3.4.0" />
+  <map key="build.plugin.3.configuration" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;configuration>&#xD;&#xA;  &lt;archive>&#xD;&#xA;    &lt;manifest>&#xD;&#xA;      &lt;addDefaultImplementationEntries>true&lt;/addDefaultImplementationEntries>&#xD;&#xA;    &lt;/manifest>&#xD;&#xA;  &lt;/archive>&#xD;&#xA;&lt;/configuration>" />
+  <map key="build.plugin.3.key" value="org.apache.maven.plugins:maven-war-plugin" />
+  <map key="build.plugin.4.groupid" value="com.mycila" />
+  <map key="build.plugin.4.artifactid" value="license-maven-plugin" />
+  <map key="build.plugin.4.version" value="4.5" />
+  <map key="build.plugin.4.configuration" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;configuration>&#xD;&#xA;  &lt;strictCheck>true&lt;/strictCheck>&#xD;&#xA;  &lt;encoding>UTF-8&lt;/encoding>&#xD;&#xA;  &lt;mapping>&#xD;&#xA;    &lt;cva>XML_STYLE&lt;/cva>&#xD;&#xA;    &lt;episode>XML_STYLE&lt;/episode>&#xD;&#xA;    &lt;gc>XML_STYLE&lt;/gc>&#xD;&#xA;    &lt;jav>SLASHSTAR_STYLE&lt;/jav>&#xD;&#xA;    &lt;jdm>SLASHSTAR_STYLE&lt;/jdm>&#xD;&#xA;    &lt;jj>SLASHSTAR_STYLE&lt;/jj>&#xD;&#xA;    &lt;jjt>SLASHSTAR_STYLE&lt;/jjt>&#xD;&#xA;    &lt;pac>SLASHSTAR_STYLE&lt;/pac>&#xD;&#xA;    &lt;rng>XML_STYLE&lt;/rng>&#xD;&#xA;    &lt;sch>XML_STYLE&lt;/sch>&#xD;&#xA;    &lt;svg>XML_STYLE&lt;/svg>&#xD;&#xA;    &lt;svrl>XML_STYLE&lt;/svrl>&#xD;&#xA;    &lt;wsdl>XML_STYLE&lt;/wsdl>&#xD;&#xA;    &lt;xjb>XML_STYLE&lt;/xjb>&#xD;&#xA;    &lt;xslt>XML_STYLE&lt;/xslt>&#xD;&#xA;  &lt;/mapping>&#xD;&#xA;  &lt;licenseSets>&#xD;&#xA;    &lt;licenseSet>&#xD;&#xA;      &lt;header>src/etc/license-template.txt&lt;/header>&#xD;&#xA;      &lt;excludes>&#xD;&#xA;        &lt;exclude>**/*.afm&lt;/exclude>&#xD;&#xA;        &lt;exclude>**/*.b64&lt;/exclude>&#xD;&#xA;        &lt;exclude>**/*.cat&lt;/exclude>&#xD;&#xA;        &lt;exclude>**/*.cer&lt;/exclude>&#xD;&#xA;        &lt;exclude>**/*.csv&lt;/exclude>&#xD;&#xA;        &lt;exclude>**/*.dat&lt;/exclude>&#xD;&#xA;        &lt;exclude>**/*.der&lt;/exclude>&#xD;&#xA;        &lt;exclude>**/*.dict&lt;/exclude>&#xD;&#xA;        &lt;exclude>**/*.doc*&lt;/exclude>&#xD;&#xA;        &lt;exclude>**/*.eot&lt;/exclude>&#xD;&#xA;        &lt;exclude>**/*.epf&lt;/exclude>&#xD;&#xA;        &lt;exclude>**/*.episode&lt;/exclude>&#xD;&#xA;        &lt;exclude>**/*.ico&lt;/exclude>&#xD;&#xA;        &lt;exclude>**/*.gif&lt;/exclude>&#xD;&#xA;        &lt;exclude>**/*.iml&lt;/exclude>&#xD;&#xA;        &lt;exclude>**/*.jj&lt;/exclude>&#xD;&#xA;        &lt;exclude>**/*.jjt&lt;/exclude>&#xD;&#xA;        &lt;exclude>**/*.jks&lt;/exclude>&#xD;&#xA;        &lt;exclude>**/*.jpg*&lt;/exclude>&#xD;&#xA;        &lt;exclude>**/*.log&lt;/exclude>&#xD;&#xA;        &lt;exclude>**/*.map&lt;/exclude>&#xD;&#xA;        &lt;exclude>**/*.md5&lt;/exclude>&#xD;&#xA;        &lt;exclude>**/*.mime&lt;/exclude>&#xD;&#xA;        &lt;exclude>**/*.min.css&lt;/exclude>&#xD;&#xA;        &lt;exclude>**/*.min.js&lt;/exclude>&#xD;&#xA;        &lt;exclude>**/*.ods&lt;/exclude>&#xD;&#xA;        &lt;exclude>**/*.otf&lt;/exclude>&#xD;&#xA;        &lt;exclude>**/*.p12&lt;/exclude>&#xD;&#xA;        &lt;exclude>**/*.patch&lt;/exclude>&#xD;&#xA;        &lt;exclude>**/*.pdf&lt;/exclude>&#xD;&#xA;        &lt;exclude>**/*.pem&lt;/exclude>&#xD;&#xA;        &lt;exclude>**/*.pmd&lt;/exclude>&#xD;&#xA;        &lt;exclude>**/*.png&lt;/exclude>&#xD;&#xA;        &lt;exclude>**/*.policy&lt;/exclude>&#xD;&#xA;        &lt;exclude>**/*.ppt*&lt;/exclude>&#xD;&#xA;        &lt;exclude>**/*.rnc&lt;/exclude>&#xD;&#xA;        &lt;exclude>**/*.sha1&lt;/exclude>&#xD;&#xA;        &lt;exclude>**/*.sha256&lt;/exclude>&#xD;&#xA;        &lt;exclude>**/*.sha384&lt;/exclude>&#xD;&#xA;        &lt;exclude>**/*.sha512&lt;/exclude>&#xD;&#xA;        &lt;exclude>**/*.swf&lt;/exclude>&#xD;&#xA;        &lt;exclude>**/*.test&lt;/exclude>&#xD;&#xA;        &lt;exclude>**/*.tif*&lt;/exclude>&#xD;&#xA;        &lt;exclude>**/*.ttf&lt;/exclude>&#xD;&#xA;        &lt;exclude>**/*.txt&lt;/exclude>&#xD;&#xA;        &lt;exclude>**/*.wiki&lt;/exclude>&#xD;&#xA;        &lt;exclude>**/*.woff*&lt;/exclude>&#xD;&#xA;        &lt;exclude>**/*.xls*&lt;/exclude>&#xD;&#xA;        &lt;exclude>**/.git*&lt;/exclude>&#xD;&#xA;        &lt;exclude>**/.pmd&lt;/exclude>&#xD;&#xA;        &lt;exclude>**/NOTICE&lt;/exclude>&#xD;&#xA;        &lt;exclude>**/LICENSE&lt;/exclude>&#xD;&#xA;        &lt;exclude>**/LICENSE2&lt;/exclude>&#xD;&#xA;        &lt;exclude>**/google*.html&lt;/exclude>&#xD;&#xA;        &lt;exclude>**/zz&lt;/exclude>&#xD;&#xA;        &lt;exclude>src/raw/**&lt;/exclude>&#xD;&#xA;        &lt;exclude>src/main/webapp/**/*.jsp&lt;/exclude>&#xD;&#xA;        &lt;exclude>src/main/resources/WEB-INF/wsdl/**&lt;/exclude>&#xD;&#xA;        &lt;exclude>src/main/resources/**/external/**&lt;/exclude>&#xD;&#xA;        &lt;exclude>src/test/resources/**/external/**&lt;/exclude>&#xD;&#xA;        &lt;exclude>src/main/resources/META-INF/services/**&lt;/exclude>&#xD;&#xA;        &lt;exclude>src/test/resources/META-INF/services/**&lt;/exclude>&#xD;&#xA;        &lt;exclude>docs/**&lt;/exclude>&#xD;&#xA;        &lt;exclude>generated/**&lt;/exclude>&#xD;&#xA;      &lt;/excludes>&#xD;&#xA;    &lt;/licenseSet>&#xD;&#xA;  &lt;/licenseSets>&#xD;&#xA;&lt;/configuration>" />
+  <map key="build.plugin.4.key" value="com.mycila:license-maven-plugin" />
+  <map key="build.plugin.5.groupid" value="org.apache.maven.plugins" />
+  <map key="build.plugin.5.artifactid" value="maven-release-plugin" />
+  <map key="build.plugin.5.version" value="3.1.1" />
+  <map key="build.plugin.5.configuration" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;configuration>&#xD;&#xA;  &lt;autoVersionSubmodules>false&lt;/autoVersionSubmodules>&#xD;&#xA;  &lt;mavenExecutorId>forked-path&lt;/mavenExecutorId>&#xD;&#xA;  &lt;useReleaseProfile>false&lt;/useReleaseProfile>&#xD;&#xA;  &lt;releaseProfiles>release&lt;/releaseProfiles>&#xD;&#xA;  &lt;goals>process-resources javadoc:jar deploy&lt;/goals>&#xD;&#xA;&lt;/configuration>" />
+  <map key="build.plugin.5.key" value="org.apache.maven.plugins:maven-release-plugin" />
+  <map key="build.plugin.6.groupid" value="com.helger.maven" />
+  <map key="build.plugin.6.artifactid" value="ph-buildinfo-maven-plugin" />
+  <map key="build.plugin.6.version" value="4.0.1" />
+  <map key="build.plugin.6.configuration" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;configuration>&#xD;&#xA;  &lt;formatProperties>false&lt;/formatProperties>&#xD;&#xA;  &lt;formatXML>true&lt;/formatXML>&#xD;&#xA;  &lt;withAllSystemProperties>true&lt;/withAllSystemProperties>&#xD;&#xA;  &lt;selectedEnvVars>&#xD;&#xA;    &lt;param>JAVA_.*&lt;/param>&#xD;&#xA;    &lt;param>M2_.*&lt;/param>&#xD;&#xA;    &lt;param>MAVEN_.*&lt;/param>&#xD;&#xA;    &lt;param>NUMBER_OF_PROCESSORS&lt;/param>&#xD;&#xA;    &lt;param>OS&lt;/param>&#xD;&#xA;    &lt;param>PROCESSOR_.*&lt;/param>&#xD;&#xA;  &lt;/selectedEnvVars>&#xD;&#xA;&lt;/configuration>" />
+  <map key="build.plugin.6.key" value="com.helger.maven:ph-buildinfo-maven-plugin" />
+  <map key="build.plugin.7.groupid" value="org.apache.maven.plugins" />
+  <map key="build.plugin.7.artifactid" value="maven-site-plugin" />
+  <map key="build.plugin.7.version" value="3.12.1" />
+  <map key="build.plugin.7.configuration" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;configuration>&#xD;&#xA;  &lt;generateSitemap>true&lt;/generateSitemap>&#xD;&#xA;  &lt;outputDirectory>C:\O\OneDrive - adapton AG\Desktop\Sender (client)\phase4-bdew-client\target\site&lt;/outputDirectory>&#xD;&#xA;  &lt;reportPlugins>&#xD;&#xA;    &lt;reportPlugin>&#xD;&#xA;      &lt;groupId>org.apache.maven.plugins&lt;/groupId>&#xD;&#xA;      &lt;artifactId>maven-project-info-reports-plugin&lt;/artifactId>&#xD;&#xA;      &lt;reportSets>&#xD;&#xA;        &lt;reportSet>&#xD;&#xA;          &lt;id>default&lt;/id>&#xD;&#xA;          &lt;reports>&#xD;&#xA;            &lt;report>index&lt;/report>&#xD;&#xA;            &lt;report>ci-management&lt;/report>&#xD;&#xA;            &lt;report>dependencies&lt;/report>&#xD;&#xA;            &lt;report>dependency-convergence&lt;/report>&#xD;&#xA;            &lt;report>dependency-info&lt;/report>&#xD;&#xA;            &lt;report>dependency-management&lt;/report>&#xD;&#xA;            &lt;report>distribution-management&lt;/report>&#xD;&#xA;            &lt;report>issue-management&lt;/report>&#xD;&#xA;            &lt;report>licenses&lt;/report>&#xD;&#xA;            &lt;report>mailing-lists&lt;/report>&#xD;&#xA;            &lt;report>modules&lt;/report>&#xD;&#xA;            &lt;report>plugin-management&lt;/report>&#xD;&#xA;            &lt;report>plugins&lt;/report>&#xD;&#xA;            &lt;report>scm&lt;/report>&#xD;&#xA;            &lt;report>summary&lt;/report>&#xD;&#xA;            &lt;report>team&lt;/report>&#xD;&#xA;          &lt;/reports>&#xD;&#xA;        &lt;/reportSet>&#xD;&#xA;      &lt;/reportSets>&#xD;&#xA;    &lt;/reportPlugin>&#xD;&#xA;    &lt;reportPlugin>&#xD;&#xA;      &lt;groupId>org.apache.maven.plugins&lt;/groupId>&#xD;&#xA;      &lt;artifactId>maven-javadoc-plugin&lt;/artifactId>&#xD;&#xA;      &lt;reportSets>&#xD;&#xA;        &lt;reportSet>&#xD;&#xA;          &lt;id>default&lt;/id>&#xD;&#xA;          &lt;reports>&#xD;&#xA;            &lt;report>javadoc&lt;/report>&#xD;&#xA;            &lt;report>test-javadoc&lt;/report>&#xD;&#xA;          &lt;/reports>&#xD;&#xA;        &lt;/reportSet>&#xD;&#xA;      &lt;/reportSets>&#xD;&#xA;    &lt;/reportPlugin>&#xD;&#xA;    &lt;reportPlugin>&#xD;&#xA;      &lt;groupId>org.apache.maven.plugins&lt;/groupId>&#xD;&#xA;      &lt;artifactId>maven-jxr-plugin&lt;/artifactId>&#xD;&#xA;      &lt;configuration>&#xD;&#xA;        &lt;inputEncoding>UTF-8&lt;/inputEncoding>&#xD;&#xA;      &lt;/configuration>&#xD;&#xA;    &lt;/reportPlugin>&#xD;&#xA;    &lt;reportPlugin>&#xD;&#xA;      &lt;groupId>org.apache.maven.plugins&lt;/groupId>&#xD;&#xA;      &lt;artifactId>maven-surefire-report-plugin&lt;/artifactId>&#xD;&#xA;      &lt;configuration>&#xD;&#xA;        &lt;aggregate>true&lt;/aggregate>&#xD;&#xA;      &lt;/configuration>&#xD;&#xA;    &lt;/reportPlugin>&#xD;&#xA;    &lt;reportPlugin>&#xD;&#xA;      &lt;groupId>org.codehaus.mojo&lt;/groupId>&#xD;&#xA;      &lt;artifactId>taglist-maven-plugin&lt;/artifactId>&#xD;&#xA;      &lt;configuration>&#xD;&#xA;        &lt;tagListOptions>&#xD;&#xA;          &lt;tagClasses>&#xD;&#xA;            &lt;tagClass>&#xD;&#xA;              &lt;displayName>Todo Work&lt;/displayName>&#xD;&#xA;              &lt;tags>&#xD;&#xA;                &lt;tag>&#xD;&#xA;                  &lt;matchString>TODO&lt;/matchString>&#xD;&#xA;                  &lt;matchType>exact&lt;/matchType>&#xD;&#xA;                &lt;/tag>&#xD;&#xA;                &lt;tag>&#xD;&#xA;                  &lt;matchString>FIXME&lt;/matchString>&#xD;&#xA;                  &lt;matchType>exact&lt;/matchType>&#xD;&#xA;                &lt;/tag>&#xD;&#xA;                &lt;tag>&#xD;&#xA;                  &lt;matchString>@todo&lt;/matchString>&#xD;&#xA;                  &lt;matchType>ignoreCase&lt;/matchType>&#xD;&#xA;                &lt;/tag>&#xD;&#xA;              &lt;/tags>&#xD;&#xA;            &lt;/tagClass>&#xD;&#xA;            &lt;tagClass>&#xD;&#xA;              &lt;displayName>Deprecation&lt;/displayName>&#xD;&#xA;              &lt;tags>&#xD;&#xA;                &lt;tag>&#xD;&#xA;                  &lt;matchString>@deprecated&lt;/matchString>&#xD;&#xA;                  &lt;matchType>ignoreCase&lt;/matchType>&#xD;&#xA;                &lt;/tag>&#xD;&#xA;              &lt;/tags>&#xD;&#xA;            &lt;/tagClass>&#xD;&#xA;          &lt;/tagClasses>&#xD;&#xA;        &lt;/tagListOptions>&#xD;&#xA;      &lt;/configuration>&#xD;&#xA;    &lt;/reportPlugin>&#xD;&#xA;    &lt;reportPlugin>&#xD;&#xA;      &lt;groupId>org.apache.maven.plugins&lt;/groupId>&#xD;&#xA;      &lt;artifactId>maven-pmd-plugin&lt;/artifactId>&#xD;&#xA;      &lt;configuration>&#xD;&#xA;        &lt;linkXRef>true&lt;/linkXRef>&#xD;&#xA;        &lt;minimumTokens>30&lt;/minimumTokens>&#xD;&#xA;        &lt;targetJdk>11&lt;/targetJdk>&#xD;&#xA;      &lt;/configuration>&#xD;&#xA;    &lt;/reportPlugin>&#xD;&#xA;    &lt;reportPlugin>&#xD;&#xA;      &lt;groupId>com.github.spotbugs&lt;/groupId>&#xD;&#xA;      &lt;artifactId>spotbugs-maven-plugin&lt;/artifactId>&#xD;&#xA;      &lt;configuration>&#xD;&#xA;        &lt;effort>Max&lt;/effort>&#xD;&#xA;      &lt;/configuration>&#xD;&#xA;    &lt;/reportPlugin>&#xD;&#xA;    &lt;reportPlugin>&#xD;&#xA;      &lt;groupId>org.codehaus.mojo&lt;/groupId>&#xD;&#xA;      &lt;artifactId>jdepend-maven-plugin&lt;/artifactId>&#xD;&#xA;    &lt;/reportPlugin>&#xD;&#xA;    &lt;reportPlugin>&#xD;&#xA;      &lt;groupId>org.apache.maven.plugins&lt;/groupId>&#xD;&#xA;      &lt;artifactId>maven-plugin-plugin&lt;/artifactId>&#xD;&#xA;    &lt;/reportPlugin>&#xD;&#xA;    &lt;reportPlugin>&#xD;&#xA;      &lt;groupId>org.codehaus.mojo&lt;/groupId>&#xD;&#xA;      &lt;artifactId>clirr-maven-plugin&lt;/artifactId>&#xD;&#xA;    &lt;/reportPlugin>&#xD;&#xA;    &lt;reportPlugin>&#xD;&#xA;      &lt;groupId>org.owasp&lt;/groupId>&#xD;&#xA;      &lt;artifactId>dependency-check-maven&lt;/artifactId>&#xD;&#xA;      &lt;reportSets>&#xD;&#xA;        &lt;reportSet>&#xD;&#xA;          &lt;id>default&lt;/id>&#xD;&#xA;          &lt;reports>&#xD;&#xA;            &lt;report>aggregate&lt;/report>&#xD;&#xA;          &lt;/reports>&#xD;&#xA;        &lt;/reportSet>&#xD;&#xA;      &lt;/reportSets>&#xD;&#xA;    &lt;/reportPlugin>&#xD;&#xA;  &lt;/reportPlugins>&#xD;&#xA;&lt;/configuration>" />
+  <map key="build.plugin.7.key" value="org.apache.maven.plugins:maven-site-plugin" />
+  <map key="build.plugin.8.groupid" value="org.apache.maven.plugins" />
+  <map key="build.plugin.8.artifactid" value="maven-javadoc-plugin" />
+  <map key="build.plugin.8.version" value="3.8.0" />
+  <map key="build.plugin.8.configuration" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;configuration>&#xD;&#xA;  &lt;encoding>UTF-8&lt;/encoding>&#xD;&#xA;  &lt;links>&#xD;&#xA;    &lt;link>https://docs.oracle.com/en/java/javase/11/docs/api/&lt;/link>&#xD;&#xA;  &lt;/links>&#xD;&#xA;  &lt;quiet>true&lt;/quiet>&#xD;&#xA;  &lt;source>8&lt;/source>&#xD;&#xA;  &lt;verbose>false&lt;/verbose>&#xD;&#xA;&lt;/configuration>" />
+  <map key="build.plugin.8.key" value="org.apache.maven.plugins:maven-javadoc-plugin" />
+  <map key="build.plugin.9.groupid" value="org.apache.felix" />
+  <map key="build.plugin.9.artifactid" value="maven-bundle-plugin" />
+  <map key="build.plugin.9.version" value="5.1.9" />
+  <map key="build.plugin.9.configuration" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;configuration>&#xD;&#xA;  &lt;instructions>&#xD;&#xA;    &lt;Automatic-Module-Name>com.helger.phase4.bdew&lt;/Automatic-Module-Name>&#xD;&#xA;    &lt;Export-Package>com.helger.phase4.bdew.*&lt;/Export-Package>&#xD;&#xA;    &lt;Import-Package>!javax.annotation.*,*&lt;/Import-Package>&#xD;&#xA;  &lt;/instructions>&#xD;&#xA;  &lt;supportedProjectTypes>&#xD;&#xA;    &lt;supportedProjectType>jar&lt;/supportedProjectType>&#xD;&#xA;    &lt;supportedProjectType>bundle&lt;/supportedProjectType>&#xD;&#xA;    &lt;supportedProjectType>war&lt;/supportedProjectType>&#xD;&#xA;  &lt;/supportedProjectTypes>&#xD;&#xA;  &lt;supportIncrementalBuild>true&lt;/supportIncrementalBuild>&#xD;&#xA;&lt;/configuration>" />
+  <map key="build.plugin.9.key" value="org.apache.felix:maven-bundle-plugin" />
+  <map key="build.plugin.10.groupid" value="org.apache.maven.plugins" />
+  <map key="build.plugin.10.artifactid" value="maven-clean-plugin" />
+  <map key="build.plugin.10.version" value="3.4.0" />
+  <map key="build.plugin.10.key" value="org.apache.maven.plugins:maven-clean-plugin" />
+  <map key="build.plugin.11.groupid" value="org.apache.maven.plugins" />
+  <map key="build.plugin.11.artifactid" value="maven-resources-plugin" />
+  <map key="build.plugin.11.version" value="3.3.1" />
+  <map key="build.plugin.11.configuration" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;configuration>&#xD;&#xA;  &lt;encoding>UTF-8&lt;/encoding>&#xD;&#xA;&lt;/configuration>" />
+  <map key="build.plugin.11.key" value="org.apache.maven.plugins:maven-resources-plugin" />
+  <map key="build.plugin.12.groupid" value="org.apache.maven.plugins" />
+  <map key="build.plugin.12.artifactid" value="maven-surefire-plugin" />
+  <map key="build.plugin.12.version" value="3.3.1" />
+  <map key="build.plugin.12.key" value="org.apache.maven.plugins:maven-surefire-plugin" />
+  <map key="build.plugin.13.groupid" value="org.apache.maven.plugins" />
+  <map key="build.plugin.13.artifactid" value="maven-install-plugin" />
+  <map key="build.plugin.13.version" value="3.1.2" />
+  <map key="build.plugin.13.key" value="org.apache.maven.plugins:maven-install-plugin" />
+  <map key="build.plugin.14.groupid" value="org.apache.maven.plugins" />
+  <map key="build.plugin.14.artifactid" value="maven-deploy-plugin" />
+  <map key="build.plugin.14.version" value="3.1.2" />
+  <map key="build.plugin.14.key" value="org.apache.maven.plugins:maven-deploy-plugin" />
+  <map key="build.datetime.text" value="2025-01-22T15:53:24.177212300" />
+  <map key="build.datetime.millis" value="1737557604177" />
+  <map key="build.datetime.date" value="2025-01-22" />
+  <map key="build.datetime.time" value="15:53:24.177212300" />
+  <map key="build.datetime.timezone.id" value="Europe/Berlin" />
+  <map key="build.datetime.timezone.offsethours" value="1" />
+  <map key="build.datetime.timezone.offsetmins" value="60" />
+  <map key="build.datetime.timezone.offsetsecs" value="3600" />
+  <map key="build.datetime.timezone.offsetmillisecs" value="3600000" />
+  <map key="dependency.count" value="11" />
+  <map key="dependency.0.groupid" value="com.helger.phase4" />
+  <map key="dependency.0.artifactid" value="phase4-lib" />
+  <map key="dependency.0.version" value="3.0.2" />
+  <map key="dependency.0.type" value="jar" />
+  <map key="dependency.0.scope" value="compile" />
+  <map key="dependency.0.optional" value="false" />
+  <map key="dependency.0.managementkey" value="com.helger.phase4:phase4-lib:jar" />
+  <map key="dependency.0.exclusion.count" value="0" />
+  <map key="dependency.1.groupid" value="com.helger.phase4" />
+  <map key="dependency.1.artifactid" value="phase4-profile-bdew" />
+  <map key="dependency.1.version" value="3.0.2" />
+  <map key="dependency.1.type" value="jar" />
+  <map key="dependency.1.scope" value="compile" />
+  <map key="dependency.1.optional" value="false" />
+  <map key="dependency.1.managementkey" value="com.helger.phase4:phase4-profile-bdew:jar" />
+  <map key="dependency.1.exclusion.count" value="0" />
+  <map key="dependency.2.groupid" value="jakarta.servlet" />
+  <map key="dependency.2.artifactid" value="jakarta.servlet-api" />
+  <map key="dependency.2.version" value="5.0.0" />
+  <map key="dependency.2.type" value="jar" />
+  <map key="dependency.2.scope" value="provided" />
+  <map key="dependency.2.optional" value="false" />
+  <map key="dependency.2.managementkey" value="jakarta.servlet:jakarta.servlet-api:jar" />
+  <map key="dependency.2.exclusion.count" value="0" />
+  <map key="dependency.3.groupid" value="junit" />
+  <map key="dependency.3.artifactid" value="junit" />
+  <map key="dependency.3.version" value="4.13.2" />
+  <map key="dependency.3.type" value="jar" />
+  <map key="dependency.3.scope" value="test" />
+  <map key="dependency.3.optional" value="false" />
+  <map key="dependency.3.managementkey" value="junit:junit:jar" />
+  <map key="dependency.3.exclusion.count" value="0" />
+  <map key="dependency.4.groupid" value="org.slf4j" />
+  <map key="dependency.4.artifactid" value="slf4j-simple" />
+  <map key="dependency.4.version" value="2.0.15" />
+  <map key="dependency.4.type" value="jar" />
+  <map key="dependency.4.scope" value="test" />
+  <map key="dependency.4.optional" value="false" />
+  <map key="dependency.4.managementkey" value="org.slf4j:slf4j-simple:jar" />
+  <map key="dependency.4.exclusion.count" value="0" />
+  <map key="dependency.5.groupid" value="com.sun.xml.bind" />
+  <map key="dependency.5.artifactid" value="jaxb-impl" />
+  <map key="dependency.5.version" value="4.0.5" />
+  <map key="dependency.5.type" value="jar" />
+  <map key="dependency.5.scope" value="test" />
+  <map key="dependency.5.optional" value="false" />
+  <map key="dependency.5.managementkey" value="com.sun.xml.bind:jaxb-impl:jar" />
+  <map key="dependency.5.exclusion.count" value="0" />
+  <map key="dependency.6.groupid" value="org.bouncycastle" />
+  <map key="dependency.6.artifactid" value="bctls-jdk18on" />
+  <map key="dependency.6.version" value="1.78.1" />
+  <map key="dependency.6.type" value="jar" />
+  <map key="dependency.6.scope" value="compile" />
+  <map key="dependency.6.optional" value="false" />
+  <map key="dependency.6.managementkey" value="org.bouncycastle:bctls-jdk18on:jar" />
+  <map key="dependency.6.exclusion.count" value="0" />
+  <map key="dependency.7.groupid" value="com.helger.commons" />
+  <map key="dependency.7.artifactid" value="ph-security" />
+  <map key="dependency.7.version" value="11.1.10" />
+  <map key="dependency.7.type" value="jar" />
+  <map key="dependency.7.scope" value="compile" />
+  <map key="dependency.7.optional" value="false" />
+  <map key="dependency.7.managementkey" value="com.helger.commons:ph-security:jar" />
+  <map key="dependency.7.exclusion.count" value="0" />
+  <map key="dependency.8.groupid" value="org.scala-lang" />
+  <map key="dependency.8.artifactid" value="scala-library" />
+  <map key="dependency.8.version" value="2.13.0" />
+  <map key="dependency.8.type" value="jar" />
+  <map key="dependency.8.scope" value="compile" />
+  <map key="dependency.8.optional" value="false" />
+  <map key="dependency.8.managementkey" value="org.scala-lang:scala-library:jar" />
+  <map key="dependency.8.exclusion.count" value="0" />
+  <map key="dependency.9.groupid" value="org.bouncycastle" />
+  <map key="dependency.9.artifactid" value="bcprov-jdk18on" />
+  <map key="dependency.9.version" value="1.78.1" />
+  <map key="dependency.9.type" value="jar" />
+  <map key="dependency.9.scope" value="compile" />
+  <map key="dependency.9.optional" value="false" />
+  <map key="dependency.9.managementkey" value="org.bouncycastle:bcprov-jdk18on:jar" />
+  <map key="dependency.9.exclusion.count" value="0" />
+  <map key="dependency.10.groupid" value="org.bouncycastle" />
+  <map key="dependency.10.artifactid" value="bcpkix-jdk18on" />
+  <map key="dependency.10.version" value="1.78.1" />
+  <map key="dependency.10.type" value="jar" />
+  <map key="dependency.10.scope" value="compile" />
+  <map key="dependency.10.optional" value="false" />
+  <map key="dependency.10.managementkey" value="org.bouncycastle:bcpkix-jdk18on:jar" />
+  <map key="dependency.10.exclusion.count" value="0" />
+  <map key="profiles.count" value="0" />
+  <map key="systemproperty.classworlds.conf" value="C:\Program Files\JetBrains\IntelliJ IDEA 2024.2.1\plugins\maven\lib\maven3\bin\m2.conf" />
+  <map key="systemproperty.file.encoding" value="UTF-8" />
+  <map key="systemproperty.file.separator" value="\" />
+  <map key="systemproperty.guice.disable.misplaced.annotation.check" value="true" />
+  <map key="systemproperty.idea.version" value="2024.2.3" />
+  <map key="systemproperty.jansi.passthrough" value="true" />
+  <map key="systemproperty.java.class.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2024.2.1\plugins\maven\lib\maven3\boot\plexus-classworlds-2.8.0.jar;C:\Program Files\JetBrains\IntelliJ IDEA 2024.2.1\plugins\maven\lib\maven3\boot\plexus-classworlds.license" />
+  <map key="systemproperty.java.class.version" value="66.0" />
+  <map key="systemproperty.java.home" value="C:\Program Files\Java\jdk-22" />
+  <map key="systemproperty.java.io.tmpdir" value="C:\Users\HANIAL~1\AppData\Local\Temp\" />
+  <map key="systemproperty.java.library.path" value="C:\Program Files\Java\jdk-22\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Python312\Scripts\;C:\Python312\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\ProgramData\chocolatey\bin;C:\Users\HaniAlassiriAlhabbou\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\PuTTY\;C:\Program Files\Git\cmd;C:\Program Files\RedHat\Podman\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Java\jdk-22\bin;;c:\Users\HaniAlassiriAlhabbou\AppData\Local\Programs\cursor\resources\app\bin;C:\Program Files\PowerShell\7\;C:\Users\HaniAlassiriAlhabbou\AppData\Local\Programs\Eclipse Adoptium\jdk-21.0.4.7-hotspot\bin;C:\Users\HaniAlassiriAlhabbou\AppData\Local\Microsoft\WindowsApps;C:\Users\HaniAlassiriAlhabbou\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\HaniAlassiriAlhabbou\.dotnet\tools;C:\Users\HaniAlassiriAlhabbou\AppData\Roaming\npm;C:\Users\HaniAlassiriAlhabbou\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Users\HaniAlassiriAlhabbou\AppData\Local\Microsoft\WinGet\Packages\FiloSottile.mkcert_Microsoft.Winget.Source_8wekyb3d8bbwe;;C:\Program Files\JetBrains\IntelliJ IDEA 2024.2.1\bin;;C:\Program Files\Apache\maven\bin;." />
+  <map key="systemproperty.java.runtime.name" value="Java(TM) SE Runtime Environment" />
+  <map key="systemproperty.java.runtime.version" value="22.0.2+9-70" />
+  <map key="systemproperty.java.specification.name" value="Java Platform API Specification" />
+  <map key="systemproperty.java.specification.vendor" value="Oracle Corporation" />
+  <map key="systemproperty.java.specification.version" value="22" />
+  <map key="systemproperty.java.vendor" value="Oracle Corporation" />
+  <map key="systemproperty.java.vendor.url" value="https://java.oracle.com/" />
+  <map key="systemproperty.java.vendor.url.bug" value="https://bugreport.java.com/bugreport/" />
+  <map key="systemproperty.java.version" value="22.0.2" />
+  <map key="systemproperty.java.version.date" value="2024-07-16" />
+  <map key="systemproperty.java.vm.compressedOopsMode" value="Zero based" />
+  <map key="systemproperty.java.vm.info" value="mixed mode, sharing" />
+  <map key="systemproperty.java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
+  <map key="systemproperty.java.vm.specification.name" value="Java Virtual Machine Specification" />
+  <map key="systemproperty.java.vm.specification.vendor" value="Oracle Corporation" />
+  <map key="systemproperty.java.vm.specification.version" value="22" />
+  <map key="systemproperty.java.vm.vendor" value="Oracle Corporation" />
+  <map key="systemproperty.java.vm.version" value="22.0.2+9-70" />
+  <map key="systemproperty.jdk.debug" value="release" />
+  <map key="systemproperty.line.separator" value="&#xD;&#xA;" />
+  <map key="systemproperty.maven.conf" value="C:\Program Files\JetBrains\IntelliJ IDEA 2024.2.1\plugins\maven\lib\maven3/conf" />
+  <map key="systemproperty.maven.ext.class.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2024.2.1\plugins\maven\lib\maven-event-listener.jar" />
+  <map key="systemproperty.maven.home" value="C:\Program Files\JetBrains\IntelliJ IDEA 2024.2.1\plugins\maven\lib\maven3" />
+  <map key="systemproperty.maven.multiModuleProjectDirectory" value="C:\O\OneDrive - adapton AG\Desktop\Sender (client)\phase4-bdew-client" />
+  <map key="systemproperty.native.encoding" value="Cp1252" />
+  <map key="systemproperty.os.arch" value="amd64" />
+  <map key="systemproperty.os.name" value="Windows 11" />
+  <map key="systemproperty.os.version" value="10.0" />
+  <map key="systemproperty.path.separator" value=";" />
+  <map key="systemproperty.stderr.encoding" value="UTF-8" />
+  <map key="systemproperty.stdout.encoding" value="UTF-8" />
+  <map key="systemproperty.sun.arch.data.model" value="64" />
+  <map key="systemproperty.sun.boot.library.path" value="C:\Program Files\Java\jdk-22\bin" />
+  <map key="systemproperty.sun.cpu.endian" value="little" />
+  <map key="systemproperty.sun.cpu.isalist" value="amd64" />
+  <map key="systemproperty.sun.io.unicode.encoding" value="UnicodeLittle" />
+  <map key="systemproperty.sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2024.2.3 install" />
+  <map key="systemproperty.sun.java.launcher" value="SUN_STANDARD" />
+  <map key="systemproperty.sun.jnu.encoding" value="Cp1252" />
+  <map key="systemproperty.sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+  <map key="systemproperty.sun.os.patch.level" value="" />
+  <map key="systemproperty.sun.stderr.encoding" value="UTF-8" />
+  <map key="systemproperty.sun.stdout.encoding" value="UTF-8" />
+  <map key="systemproperty.user.country" value="DE" />
+  <map key="systemproperty.user.dir" value="C:\O\OneDrive - adapton AG\Desktop\Sender (client)\phase4-bdew-client" />
+  <map key="systemproperty.user.home" value="C:\Users\HaniAlassiriAlhabbou" />
+  <map key="systemproperty.user.language" value="de" />
+  <map key="systemproperty.user.name" value="HaniAlassiriAlhabbou" />
+  <map key="systemproperty.user.script" value="" />
+  <map key="systemproperty.user.timezone" value="Europe/Berlin" />
+  <map key="systemproperty.user.variant" value="" />
+  <map key="envvar.JAVA_HOME" value="C:\Program Files\Java\jdk-17" />
+  <map key="envvar.NUMBER_OF_PROCESSORS" value="16" />
+  <map key="envvar.OS" value="Windows_NT" />
+  <map key="envvar.PROCESSOR_ARCHITECTURE" value="AMD64" />
+  <map key="envvar.PROCESSOR_IDENTIFIER" value="AMD64 Family 25 Model 80 Stepping 0, AuthenticAMD" />
+  <map key="envvar.PROCESSOR_LEVEL" value="25" />
+  <map key="envvar.PROCESSOR_REVISION" value="5000" />
+</mapping>
