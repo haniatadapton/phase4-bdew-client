@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.helger.phase4.bdew.Phase4BDEWHttpClientSettingsTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.259 s -- in com.helger.phase4.bdew.Phase4BDEWHttpClientSettingsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.265 s -- in com.helger.phase4.bdew.Phase4BDEWHttpClientSettingsTest

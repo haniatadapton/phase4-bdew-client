@@ -37,6 +37,7 @@ import com.helger.security.keystore.KeyStoreHelper;
 import com.helger.security.keystore.TrustStoreDescriptor;
 import com.helger.servlet.mock.MockServletContext;
 import com.helger.web.scope.mgr.WebScopeManager;
+import org.bouncycastle.jce.provider.BouncyCastleProvider;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -45,9 +46,9 @@ import java.io.FileOutputStream;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.security.KeyStore;
+import java.security.Security;
 import java.security.cert.Certificate;
 import java.security.cert.X509Certificate;
-//import java.net.http.HttpClientSettings;
 
 public class MainPhase4BDEWSenderExample
 {
@@ -153,7 +154,7 @@ public class MainPhase4BDEWSenderExample
 //      LOGGER.info("  Valid until: " + aReceiverCert.getNotAfter());
 
       // Add BouncyCastle as a security provider
-      //Security.addProvider(new BouncyCastleProvider());
+      Security.addProvider(new BouncyCastleProvider());
 
 
       final KeyStoreAndKeyDescriptor aKSD = KeyStoreAndKeyDescriptor.builder ()
@@ -185,13 +186,9 @@ public class MainPhase4BDEWSenderExample
       //final Wrapper <Ebms3SignalMessage> aSignalMsgHolder = new Wrapper <> ();
 
 
-      // Start configuring here
-      final EAS4UserMessageSendResult eResult;
-
-      eResult = Phase4BDEWSender.builder()
-              //Communication Configs
-              .endpointURL("http://localhost:8080/as4")
-              //.endpointURL("https://as4-9903914000002.services.as4energy.com/AS4Service/AS4Endpoint")
+      final AS4CryptoFactoryInMemoryKeyStore cryptoFactory = new AS4CryptoFactoryInMemoryKeyStore(aKSD, aTSD);
+      final EAS4UserMessageSendResult eResult = new BDEWUserMessageBuilderWithECDH(cryptoFactory)
+              .endpointURL("https://as4-9903914000002.services.as4energy.com/AS4Service/AS4Endpoint")
               .encryptionKeyIdentifierType(ECryptoKeyIdentifierType.X509_KEY_IDENTIFIER)
               .signingKeyIdentifierType(ECryptoKeyIdentifierType.BST_DIRECT_REFERENCE)
               //----PartyInfo----
@@ -213,12 +210,42 @@ public class MainPhase4BDEWSenderExample
                               .mimeTypeXML()
                               .charset(StandardCharsets.UTF_8),
                       aBDEWPayloadParams)
-              .cryptoFactory(new AS4CryptoFactoryInMemoryKeyStore(aKSD, aTSD))
-              //.receiverCertificate(aReceiverCert)
-//              .signalMsgConsumer((aSignalMsg, aMMD, aState) ->
-//                  aSignalMsgHolder.set(aSignalMsg))
               .sendMessageAndCheckForReceipt();
       LOGGER.info("BDEW send result: " + eResult);
+//      // Start configuring here
+//      final EAS4UserMessageSendResult eResult;
+//
+//      eResult = Phase4BDEWSender.builder()
+//              //Communication Configs
+//              //.endpointURL("http://localhost:8080/as4")
+//              .endpointURL("https://as4-9903914000002.services.as4energy.com/AS4Service/AS4Endpoint")
+//              .encryptionKeyIdentifierType(ECryptoKeyIdentifierType.X509_KEY_IDENTIFIER)
+//              .signingKeyIdentifierType(ECryptoKeyIdentifierType.BST_DIRECT_REFERENCE)
+//              //----PartyInfo----
+//              .fromPartyIDType("urn:oasis:names:tc:ebcore:partyid-type:iso6523:0088")
+//              .fromPartyID("AS4-Sender")
+//              .fromRole(CAS4.DEFAULT_INITIATOR_URL)
+//              .toPartyIDType("urn:oasis:names:tc:ebcore:partyid-type:iso6523:0088")
+//              .toPartyID("AS4-Receiver")
+//              .toRole(CAS4.DEFAULT_RESPONDER_URL)
+//
+//              //----CollaborationInfo----
+//              .agreementRef("https://www.bdew.de/as4/communication/agreement")
+//              .service("https://www.bdew.de/as4/communication/services/MP")
+//              //.service("http://docs.oasis-open.org/ebxml-msg/ebms/v3.0/ns/core/200704/service")
+//              .action("http://docs.oasis-open.org/ebxml-msg/as4/200902/action")
+//              .payload(AS4OutgoingAttachment.builder()
+//                              .data(aPayloadBytes)
+//                              .compressionGZIP()
+//                              .mimeTypeXML()
+//                              .charset(StandardCharsets.UTF_8),
+//                      aBDEWPayloadParams)
+//              .cryptoFactory(new AS4CryptoFactoryInMemoryKeyStore(aKSD, aTSD))
+//              //.receiverCertificate(aReceiverCert)
+////              .signalMsgConsumer((aSignalMsg, aMMD, aState) ->
+////                  aSignalMsgHolder.set(aSignalMsg))
+//              .sendMessageAndCheckForReceipt();
+//      LOGGER.info("BDEW send result: " + eResult);
 
 
 
