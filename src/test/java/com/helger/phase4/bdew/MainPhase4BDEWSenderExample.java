@@ -153,9 +153,46 @@ public class MainPhase4BDEWSenderExample
 //      LOGGER.info("  Valid from: " + aReceiverCert.getNotBefore());
 //      LOGGER.info("  Valid until: " + aReceiverCert.getNotAfter());
 
-      // Add BouncyCastle as a security provider
-      Security.addProvider(new BouncyCastleProvider());
+      // Add BouncyCastle as a security provider and configure it as the preferred provider
+      Security.removeProvider(BouncyCastleProvider.PROVIDER_NAME);
+      Security.insertProviderAt(new BouncyCastleProvider(), 1);
 
+      // Register BC JSSE Provider (order is important)
+      Security.removeProvider("BCJSSE");
+      Security.insertProviderAt(new org.bouncycastle.jsse.provider.BouncyCastleJsseProvider(), 1);
+
+      // Force BC as default for EC operations
+      System.setProperty("java.security.ecdsa.curve.provider", "BC");
+      Security.setProperty("crypto.policy", "unlimited");
+      
+      // Configure SSL to use BC
+      System.setProperty("javax.net.ssl.keyManagerFactory.algorithm", "PKIX");
+      System.setProperty("javax.net.ssl.trustManagerFactory.algorithm", "PKIX");
+      System.setProperty("javax.net.ssl.keyStore", "src/test/resources/ks1.p12");
+      System.setProperty("javax.net.ssl.keyStorePassword", KEYSTORE_PASSWORD);
+      System.setProperty("javax.net.ssl.keyStoreType", "PKCS12");
+      System.setProperty("javax.net.ssl.keyStoreProvider", "BC");
+      System.setProperty("javax.net.ssl.trustStore", "src/test/resources/truststore.p12");
+      System.setProperty("javax.net.ssl.trustStorePassword", KEYSTORE_PASSWORD);
+      System.setProperty("javax.net.ssl.trustStoreType", "PKCS12");
+      System.setProperty("javax.net.ssl.trustStoreProvider", "BC");
+
+      // Force TLS 1.2 and debug
+      System.setProperty("https.protocols", "TLSv1.2");
+      System.setProperty("jdk.tls.client.protocols", "TLSv1.2");
+      System.setProperty("javax.net.debug", "ssl,handshake");
+
+      // Configure BC JSSE specific properties
+      System.setProperty("org.bouncycastle.jsse.client.curves", "brainpoolP256r1,brainpoolP384r1,brainpoolP512r1");
+      System.setProperty("org.bouncycastle.jsse.allowUnsafeLegacyKeyExchange", "true");
+      System.setProperty("org.bouncycastle.jsse.client.enableNamedGroups", "true");
+      System.setProperty("org.bouncycastle.ec.enable_custom", "true");
+      
+      // Use BC's native SSL implementation
+      Security.setProperty("ssl.KeyManagerFactory.algorithm", "PKIX");
+      Security.setProperty("ssl.TrustManagerFactory.algorithm", "PKIX");
+      Security.setProperty("ssl.SocketFactory.provider", "org.bouncycastle.jsse.provider.SSLSocketFactoryImpl");
+      Security.setProperty("ssl.ServerSocketFactory.provider", "org.bouncycastle.jsse.provider.SSLServerSocketFactoryImpl");
 
       final KeyStoreAndKeyDescriptor aKSD = KeyStoreAndKeyDescriptor.builder ()
               .type (EKeyStoreType.PKCS12)
